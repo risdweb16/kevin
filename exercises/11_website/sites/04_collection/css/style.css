@@ -1,0 +1,82 @@
+#makeMeScrollable div.scrollableArea img{
+			float: left;
+			margin: 3em;
+			padding: 0;
+		}
+.scroll{
+	margin-top:20%;
+	margin-left:15%;
+	font-size: 700%;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.scroll #Layer_1{
+	margin-left:58.5%;
+	color:#000;
+}
+#makeMeScrollable img.scrolling{
+/*	position: absolute;*/
+/*	width:200%;*/
+margin-top:10%;
+	height:90vh;
+}
+nav {
+	font-family: 'Open Sans', sans-serif;
+    padding:1em;
+/*    margin-top:-20%;*/
+    position: fixed;
+    z-index:100;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+}
+nav ul li {
+	font-size: 120%;
+    display:inline-block;
+    position:relative;
+}
+nav a {
+	color:#000;
+    line-height:1em;
+    padding:0 4em;
+}
+nav a {
+    text-decoration:none;
+    display:block;
+}
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active{
+    color:rgb(150,150,150);
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+@media screen and (max-width: 1010px) {
+	#makeMeScrollable div.scrollableArea img{
+		margin-top:10px;
+	}
+	nav{
+		margin-top:5px;
+		margin-left:-113px;
+		width:10%;
+		display: block;
+		float: left;
+		position: relative;
+	}
+}
+@media screen and (max-width: 830px) {
+	#makeMeScrollable div.scrollableArea img{
+		margin:80px;
+	}
+	nav{
+		margin-top:5px;
+		margin-left:-113px;
+		width:10%;
+		display: block;
+		float:none;
+	}
+
+}

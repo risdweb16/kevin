@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dairy Scary</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,900italic' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/style_one.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+</head>
+<body>
+	<img class="dairy tooltip" src="images/cheese.png" title="Cheese - Try Daiya cheese!"/>
+	<img class="dairy tooltip" src="images/crepe.png" title="Crepes - Use Earth Balance instead of butter"/>
+	<img class="dairy tooltip" src="images/pie.png" title="Pie - find a crust without dairy"/>
+	<img class="dairy tooltip" src="images/milk.png" title="Milk - Coconut, almond, soy, and cashew are great alternatives!"/>
+	<img class="dairy tooltip" src="images/chocolate.png" title="Chocolate - Lots of dark chocolate are dairy-free"/>
+	<img class="dairy tooltip" src="images/butter.png" title="Butter - use Earth Balance instead"/>
+	<img class="dairy tooltip" src="images/cookie.png" title="Cookies - brands like Back to Nature"/>
+	<img class="nodairy tooltip" src="images/oreo.png" title="Oreos - there still isn't dairy!!!">
+	<img class="dairy tooltip" src="images/pastries.png" title="Pastries - find a vegan market!"/>
+	<img class="dairy tooltip" src="images/bread.png" title="Bread - there are plenty of breads without dairy, try making some on your own"/>
+	<img class="dairy tooltip" src="images/doritos.png" title="Doritos - Earth Balance chips are great"/>
+	<img class="dairy tooltip" src="images/macaroni.png" title="Macaroni and cheese - Annie's makes great vegan macaroni and cheese"/>
+	<img class="dairy tooltip" src="images/risotto.png" title="Risotto - try making it with Earth Balance and cashew milk"/>
+	<img class="dairy tooltip" src="images/pizza.png" title="Pizza - there are plenty of dairy-free pizzas, like at Nice Slice"/>
+	<img class="nodairy tooltip" src="images/broccoli.png" title="Broccoli - Vegetables never have dairy!">
+	<img class="dairy tooltip" src="images/cheetos.png" title="Cheetos - Earth Balance has some great alternatives!"/>
+	<img class="dairy tooltip" src="images/soup.png" title="Soup - chicken soup often doesn't have dairy and there are lots more"/>
+	<img class="dairy tooltip" src="images/icecream.png" title="Ice Cream - cashew milk ice cream tastes so good
+	"/>
+	<img class="dairy tooltip" src="images/mashed.png" title="Mashed potatos - make it without dairy, it'll be fine!"/>
+	<img class="nodairy tooltip" src="images/egg.png" title="Eggs - never have dairy!"/>
+	<img class="dairy tooltip" src="images/bagel.png" title="Bagel with cream cheese - there are several soy and Daiya options"/>
+	<img class="dairy tooltip" src="images/corn.png" title="Corn muffin - find a vegan bakery near you!"/>
+	<img class="nodairy tooltip" src="images/macaroon.png" title="Coconut macaroons - often made without dairy"/>
+	<img class="dairy tooltip" src="images/latte.png" title="Latte - ask it with almond or soy milk"/>
+</div>
+
+	<div id="title">
+		<p>*Click food and find out an alternative!</p>
+	</div>
+	
+	<script> 
+	$(document).ready(function() {
+            $('.tooltip').tooltipster({
+            	trigger: 'click'
+            });
+	});
+	$("img.dairy").click(function() {
+		$(this).attr("src","images/dairy-01.png");
+	});
+
+	$("img.nodairy").click(function() {
+		$(this).attr("src","images/text-01.png");
+	});
+
+	</script>
+</body>
+</html>

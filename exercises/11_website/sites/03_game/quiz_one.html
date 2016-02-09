@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dairy Scary</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,900italic' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/style_one.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+</head>
+<body>
+	<img class="dairy tooltip" src="images/cheese.png" title="Cheese - full of dairy!"/>
+	<img class="dairy tooltip" src="images/crepe.png" title="Crepes - made with butter"/>
+	<img class="dairy tooltip" src="images/pie.png" title="Pie - often the crust is made with butter"/>
+	<img class="dairy tooltip" src="images/milk.png" title="Milk - obviously!"/>
+	<img class="dairy tooltip" src="images/chocolate.png" title="Chocolate - while some chocolate doesn't have dairy, most have milk, butter, or milkfat in it"/>
+	<img class="dairy tooltip" src="images/butter.png" title="Butter - again, obviously!"/>
+	<img class="dairy tooltip" src="images/cookie.png" title="Cookies - most cookies have butter in them"/>
+	<img class="nodairy tooltip" src="images/oreo.png" title="Oreos - NO DAIRY!!!">
+	<img class="dairy tooltip" src="images/pastries.png" title="Pastries - most pastries are made with butter"/>
+	<img class="dairy tooltip" src="images/bread.png" title="Bread - while some do not have dairy, others have butter"/>
+	<img class="dairy tooltip" src="images/doritos.png" title="Doritos - made with cheese"/>
+	<img class="dairy tooltip" src="images/macaroni.png" title="Macaroni and cheese - made with milk, butter, and cheese...ooph"/>
+	<img class="dairy tooltip" src="images/risotto.png" title="Risotto - made with milk and butter"/>
+	<img class="dairy tooltip" src="images/pizza.png" title="Pizza - Obviously!!!"/>
+	<img class="nodairy tooltip" src="images/broccoli.png" title="Broccoli - Vegetables never have dairy!">
+	<img class="dairy tooltip" src="images/cheetos.png" title="Cheetos - made with cheese"/>
+	<img class="dairy tooltip" src="images/soup.png" title="Soup - a lot of soup has milk or butter in it, especially bisques and chowders"/>
+	<img class="dairy tooltip" src="images/icecream.png" title="Ice Cream - frozen cow juice"/>
+	<img class="dairy tooltip" src="images/mashed.png" title="Mashed potatos - often made with butter and milk"/>
+	<img class="nodairy tooltip" src="images/egg.png" title="Eggs - for some reason people think eggs have dairy; they don't"/>
+	<img class="dairy tooltip" src="images/bagel.png" title="Bagel with cream cheese - duh!"/>
+	<img class="dairy tooltip" src="images/corn.png" title="Corn muffin - made with butter, like many other muffins"/>
+	<img class="nodairy tooltip" src="images/macaroon.png" title="Coconut macaroons - often made without dairy"/>
+	<img class="dairy tooltip" src="images/latte.png" title="Latte - many hot beverages like lattes are made with steamed milk"/>
+</div>
+
+	<div id="title">
+		<p>*Click food and guess if there is dairy!</p>
+	</div>
+
+	<script> 
+
+	 $(document).ready(function() {
+            $('.tooltip').tooltipster({
+            	trigger: 'click'
+            });
+	});
+	$("img.dairy").click(function() {
+		$(this).attr("src","images/dairy-01.png");
+	});
+
+	$("img.nodairy").click(function() {
+		$(this).attr("src","images/text-01.png");
+	});
+
+	</script>
+</body>
+</html>
