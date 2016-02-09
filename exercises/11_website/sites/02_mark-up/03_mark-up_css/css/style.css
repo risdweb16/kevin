@@ -252,16 +252,17 @@ a.links:visited{
 	padding-left: 20em;
 }
 .first{
-	font-size:1.1em;
+	font-size:1em;
 	margin-right: 1.5em;
 	margin-left: 1.5em;
 	text-align: justify;
 	padding-right: 13%;
 }
-.side{
-	font-family: 'Lato', sans-serif;
-	font-size: 100%;
-	height:100%;
+.side p{
+	z-index:0;
+	font-family: Helvetica, sans-serif;
+	font-size: 60%;
+	height:80%;
 	width:8%;
 	color:#1F1F1F;
 	margin-left:87%;
@@ -271,7 +272,7 @@ a.links:visited{
 }
 .header{
 	margin-left:3%;
-	font-family: 'Lato', sans-serif;;
+	font-family: Helvetica, sans-serif;;
 	font-size:130%;
 	letter-spacing: 0.25em;
 }
